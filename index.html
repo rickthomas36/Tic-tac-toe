@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="game-title">Tic-Tac-Toe</h1>
+  <!-- Home screen for selecting the game mode -->
+  <div id="home-screen" class="home-screen">
+    <button id="human-vs-human" class="game-mode-button">Play Human vs. Human</button>
+    <button id="human-vs-computer" class="game-mode-button">Play Human vs. Computer</button>
+  </div>
+
+  <!-- Game screen -->
+  <div id="game-screen" class="game-container" style="display: none;">
+    <div class="game-container2"></div>
+    <div class="score-board">
+      <span id="score-x">X: 0</span>
+      <span id="score-o">O: 0</span>
+    </div>
+    <div id="board" class="board">
+      <div class="cell" data-cell></div> 
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    
+    <button id="reset-score" class="reset-score-button">Reset Score</button>
+    <button id="restart" class="restart-button">Restart Game</button>
+    <button id="back-to-menu" class="back-to-menu-button">Back to Menu</button>
+    <p id="message" class="game-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
